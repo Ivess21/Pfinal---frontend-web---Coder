@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    background-color: #e8d7f1;
+    padding: 0 0px;
+    height: 80px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 20px; */
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
+    height: 100%;
+}
+.sc{
+    color: #355070;
+    text-transform: uppercase;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: #355070;
+}
+a:hover{
+    color: #bbb891;
+
+}
+main{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: calc(100vh-74px); */
+}
+
+.imgcelular{
+    width: 300px;
+    height: 300px;
+}
+.eslogan{
+display: flex;
+justify-content: center;
+padding-top: 30px;
+}
+
+p{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.boton-catalogo{
+    display: block;
+    width: 65px;
+    font-weight: 700;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.boton-catalogo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color:#e8d7f1 ;
+    color: #355070;
+    text-align: center;
+    margin-top: 255px;
+    padding: 20px;          
+    font-size: 25px;
+
+}
+footer .redes a{
+    color: black;
+    font-size: 25px;
+}
+.logo{
+    display: flex;
+    justify-content:row ;
+    align-items: start;
+    width: 40px;
+    height: 20px;
+    margin-right: 5px;
+}
+.contenedor-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
