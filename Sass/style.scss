@@ -1,39 +1,35 @@
-* {
+*{
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
-    --color_logo:#355070;
+    --color_logo :#355070;
     --color_primario: #e8d7f1;
     --color_primario_suave: #bbb891;
     --altura_header: 80px;
     --padding_left_right: 2rem;
     --ancho_maximo: 1200px;
 }
-
-body {
+body{
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-a {
+
+a{
     text-decoration: none;
 }
-
-ol, ul {
+ol,ul{
     list-style: none;
 }
-
 .header {
     height: var(--altura_header);
     background-color: var(--color_primario);
 }
-
 .navbar {
     height: 100%;
     display: flex;
@@ -42,24 +38,20 @@ ol, ul {
     flex-wrap: wrap;
     padding: 0 var(--padding_left_right);
 }
-
-.menu_hamburguesa {
+.menu_hamburguesa{
     display: none;
 }
-
 .menu_hamburguesa:checked + .ul_links {
     height: calc(100vh - var(--altura_header));
 }
-
 .logo {
     color: var(--color_logo);
 }
 
 .list_icon {
     color: var(--color_logo);
-cursor: pointer;
+    cursor: pointer;
 }
-
 .ul_links {
     width: 100%;
     background-color: var(--color_primario);
@@ -68,21 +60,22 @@ cursor: pointer;
     left: 0;
     height: 0;
     overflow: hidden;
-  /* height: calc(100vh - var(--altura_header)); */
+    /* height: calc(100vh - var(--altura_header)); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    transition: all 0.3s;
-}
 
+    transition: all .3s;
+}
+.li_links {
+}
 .link {
     font-size: 3em;
     color: var(--color_blanco);
     font-weight: bold;
 }
-
 .boton-catalogo {
     display: inline-block;
     padding: 10px 20px;
@@ -93,40 +86,42 @@ cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
 .boton-catalogo:hover {
-background-color: #bbb891;
+    background-color: #bbb891;
 }
-
-@media (min-width: 768px) {
+@media (min-width:768px){
     .labe_hamburguesa {
-    display: none;
+        display: none;
     }
-    .ul_links {
-    position: static;
-    width: auto;
-    height: auto;
-    flex-direction: row;
-    gap: 2rem;
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
     }
-    .link {
-    font-size: 1.2rem;
-    transition: all 0.3s;
-    padding: 0.2rem 0.7rem;
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
     }
-.link:hover {
-    color: #bbb891;
+    .link:hover{
+        color: #bbb891;}
     }
+    .logo{
+        text-align: center;
+    }
+
+
+.imagen-carrusel{
+
 }
-.logo {
-    text-align: center;
+@media (max-width:800px){
+    .ul_links{
+        gap: 1rem;
+    }
 }
 
-@media (max-width: 800px) {
-    .ul_links {
-    gap: 1rem;
-    }
-}
 .carousel-inner {
     height: 400px;
     width: 300px;
@@ -143,7 +138,6 @@ footer {
     padding: 20px;
     background-color: #e8d7f1;
 }
-
 .p-container {
     text-align: center;
     margin-bottom: 10px;
@@ -153,75 +147,69 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 .redes a {
-    margin: 0 10px;
+    margin: 0 10px; 
 }
-
 @media only screen and (max-width: 768px) {
     footer {
-    flex-direction: column;
-}
-    footer .redes {
-    flex-direction: column;
+        flex-direction: column;
+        .redes {
+            flex-direction: column;
+        }
+    
+        .redes a {
+            margin: 5px 0; 
+        }
     }
-    footer .redes a {
-    margin: 5px 0;
     }
-}
+
 .fa-instagram {
     font-size: 2rem;
     color: #355070;
+    
 }
-
 .fa-facebook {
     font-size: 2rem;
     color: #355070;
 }
-
 .fa-x-twitter {
     font-size: 2rem;
     color: #355070;
 }
 
-.c-item {
+.c-item{
     height: 100px;
 }
-
-.c-img {
+.c-img{
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     filter: brightness(0.5);
 }
-
-.h2yp {
+.h2yp{
     text-align: center;
 }
-
-.sucursales-tittle {
+.sucursales-tittle{
     color: #bbb891;
 }
-
-.sucursales-p {
+.sucursales-p{
     color: #355070;
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    grid-gap: 100px;
+    grid-gap: 100px; 
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 20px; 
+    
 }
 
 .sucursales-ubi {
     border: 1px solid #ccc;
-    width: 100%;
+    width: 100%; 
     place-content: center;
     justify-content: center;
 }
@@ -231,7 +219,7 @@ footer {
     justify-self: center;
     align-self: center;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 iframe {
@@ -241,7 +229,6 @@ iframe {
     align-items: center;
     padding-left: 20px;
 }
-
-.sucurnum {
+.sucurnum{
     text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}

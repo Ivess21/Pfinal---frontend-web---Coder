@@ -14,22 +14,135 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="contenedor-logos">
-                <a href="#"><img class="logo" src="./img/android-chrome-192x192.png" alt=""></a>
-            <h1 class="sc">Smart City</h1>
-            </div>
-            
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/catalogo.html">Catalogo</a></li>
-                    <li><a href="./pages/trabajaconnosotros.html">Trabaja con nosotros</a></li>
-                    <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                    <li><a href="./pages/acceder.html">Acceder</a></li>
-                </ul>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">Smart City</h1>
+            <label class="labe_hamburguesa" for="menu_hamburguesa">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="list_icon"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="./index.html" class="link">Inicio</a>
+                </li>
+                <li class="li_links">
+                    <a href="./pages/ubicacion.html" class="link">Ubicación</a>
+                </li>
+                <li class="li_links">
+                    <a href="./pages/ofertas.html" class="link">Oferta</a>
+                </li>
+                <l1 class="li_links">
+                    <a href="./pages/catalogo.html" class="link">Catalogo</a>
+                </l1>
+                <l1 class="li_links">
+                    <a href="./pages/trabajaconnosotros.html" class="link">Trabaja con nosotros</a>
+                </l1>
+            </ul>
         </nav>
     </header>
+    <main>
+        <h2>Catalogo</h2>
+        <section class="contenido">
+            <div>
+                <img class="img-catalogo" src="../img/tv.png" alt="smart tv">
+                <h6>Componentes</h6>
+                    <ul>
+                        <li>
+                            Resolución full HD
+                        </li>
+                        <li>
+                            Incluye web browser
+                        </li>
+                        <li>
+                            Sistema operativo Tizen
+                        </li>
+                        <li>
+                            Alexa incorporado
+                        </li>
+                    </ul>
+                    <button class="boton-catalogo">Comprar</button>
+            </div>
+            <div>
+                <img class="img-catalogo" src="../img/ps5-removebg-preview.png" alt="playstation5">
+                <h6>Componentes</h6>
+                <ul>
+                    <li>
+                        SSD personalizado de 825 GB
+                    </li>
+                    <li>
+                        SDRAM GDDR6 de 16 GB
+                    </li>
+                    <li>
+                        x86-64-AMD Ryzen™ Zen 2 8 núcleos/16 hilos frecuencia variable, hasta 3.5GHz
+                    </li>
+                    <li>
+                        Motor de gráficos basado en AMD Radeon ™ RDNA 2
+                    </li>
+                </ul>
+                <button class="boton-catalogo">Comprar</button>
+            </div>
+            <div>
+                <img class="img-catalogo" src="../img/logicam.png" alt="webcam">
+                <h6>Componentes</h6>
+                <ul>
+                    <li>
+                        Resolución máxima: 1080p / 30fps
+                    </li>
+                    <li>
+                        Tipo de enfoque: enfoque automático.
+                    </li>
+                    <li>
+                        Micrófono incorporado: estéreo, inegrado.
+                    </li>
+                    <li>
+                        Clip: Universal, integrado.
+                    </li>
+                </ul>
+                <button class="boton-catalogo">Comprar</button>
+            </div>
+            <div>
+                <img class="img-catalogo" src="../img/Smart_watch-removebg-preview.png" alt="smartwatch">
+                <h6>Componentes</h6>
+                <ul>
+                    <li>
+                        batería (de 205 mAh)
+                    </li>
+                    <li>
+                        Pantalla de alta resolución de 320-385 pixeles
+                    </li>
+                    <li>
+                        Modo de carga magnético 
+                    </li>
+                    <li>
+                        Compatible con todos los dispositivos Android e IOS
+                    </li>
+                </ul>
+                <button class="boton-catalogo">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <section class="p-container">
+        <p>Todos los derechos reservados</p>
+    </section>
+    
+    <div class="redes">
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/home.php"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
