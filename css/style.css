@@ -86,7 +86,7 @@ cursor: pointer;
 .boton-catalogo {
     display: inline-block;
     padding: 10px 20px;
-    color: #fff;
+    color: black;
     font-size: 1.2rem;
     text-decoration: none;
     border: none;
@@ -245,3 +245,90 @@ iframe {
 .sucurnum {
     text-align: center;
 }/*# sourceMappingURL=style.css.map */
+.form-sect{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.form-sect h3{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.form-sect p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.form-sect a{
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.form-sect a i{
+    color: orange;
+    margin-right: 10px;
+}
+
+.form-sect form .campo, textarea{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.form-sect form textarea{
+    min-height: 100px;
+}
+
+.form-sect .btn-enviar{
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: orange;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .form-sect{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+
+    .form-sect h3{
+        font-size: 35px;
+    }
+
+    .form-sect p{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .form-sect a{
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .form-sect form textarea{
+        min-width: 530px;
+        max-width: 530px;
+        min-height: 140px;
+        max-height: 150px;
+    }
+}
