@@ -19,6 +19,9 @@ body {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    margin: 0; 
+    height: 100vh; 
 }
 
 a {
@@ -68,7 +71,6 @@ cursor: pointer;
     left: 0;
     height: 0;
     overflow: hidden;
-  /* height: calc(100vh - var(--altura_header)); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,6 +144,23 @@ footer {
     justify-content: center;
     padding: 20px;
     background-color: #e8d7f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+}
+@media (min-width: 768px) {
+    footer {
+        padding: 10px; 
+    }
+    
+    footer p {
+        font-size: 14px; 
+    }
+    
+    footer a {
+        font-size: 14px; 
+    }
 }
 
 .p-container {
@@ -189,22 +208,24 @@ footer {
 }
 
 .c-img {
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    filter: brightness(0.5);
+    width: 100%; 
+    height: auto; 
 }
+
 
 .h2yp {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .sucursales-tittle {
-    color: #bbb891;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .sucursales-p {
-    color: #355070;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .grid-container {
@@ -227,24 +248,28 @@ footer {
 }
 
 .grid-item {
-    width: 50%;
-    justify-self: center;
-    align-self: center;
-    overflow: hidden;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 iframe {
     width: 100%;
-    height: 350px;
-    border: 0;
-    align-items: center;
-    padding-left: 20px;
+    max-width: 400px;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .h2yp {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
 }
 
 .sucurnum {
-    text-align: center;
-}/*# sourceMappingURL=style.css.map */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .form-sect{
     width: 100%;
     max-width: 90%;
@@ -258,6 +283,7 @@ iframe {
 .form-sect h3{
     margin-bottom: 15px;
     font-size: 25px;
+    color: #355070;
 }
 
 .form-sect p{
@@ -330,5 +356,31 @@ iframe {
         max-width: 530px;
         min-height: 140px;
         max-height: 150px;
+    }
+}
+
+.main-ofertas {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.ofertas-container {
+    text-align: center;
+}
+.buy-button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+} 
+@media screen and (max-width: 768px) {
+    main {
+    grid-template-columns: 1fr;
     }
 }
