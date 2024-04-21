@@ -1,0 +1,30 @@
+.header{
+    background-color: #e8d7f1;
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.ul_links {
+    width: 100%;
+    background-color: #e8d7f1;
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: all 0.3s;
+}
+.link{
+    color: #355070;
+    font-size: 20px;
+}

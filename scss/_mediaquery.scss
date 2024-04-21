@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+    .labe_hamburguesa {
+    display: none;
+    }
+    .ul_links {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .logo {
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 800px) {
+    .ul_links {
+    gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding: 10px; 
+    }
+    
+    footer p {
+        font-size: 14px; 
+    }
+    
+    footer a {
+        font-size: 14px; 
+    }
+}
+@media only screen and (max-width: 768px) {
+    footer {
+    flex-direction: column;
+}
+    footer .redes {
+    flex-direction: column;
+    }
+    footer .redes a {
+    margin: 5px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .h2yp {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .form-sect{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+    grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 800px) {
+    .ul_links {
+        gap: 1rem;
+    }
+}
