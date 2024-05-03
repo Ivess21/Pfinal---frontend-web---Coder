@@ -1,0 +1,27 @@
+.ubi-container{
+    grid-template-columns: auto auto;
+    gap: 80px;
+
+}
+.iframe{
+    width: 100px;
+    height: 100px;
+}
+.sucur-ubi{
+    text-align: center;
+    border: 1px solid black;
+}
+.relleno{
+    text-align: center;
+    background-color: rgb(13, 1, 1);
+    opacity: 0.9;
+    background-size: cover;
+    padding-top: 10px;
+}
+.sucursal-tittle{
+    color: rgb(222, 66, 66);
+}
+.h2yp{
+    align-items: center;
+    color: white;
+}

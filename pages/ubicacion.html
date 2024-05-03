@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Smart city!</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="shortcut icon" href="./img/chip.logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart city!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="./img/chip.logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">Smart City</h1>
-            <label class="labe_hamburguesa" for="menu_hamburguesa">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="list_icon"
-                    viewBox="0 0 16 16"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                    />
-                </svg>
-            </label>
-            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
-            <ul class="ul_links">
-                <li class="li_links">
-                    <a href="../index.html" class="link">Inicio</a>
-                </li>
-                <li class="li_links">
-                    <a href="../pages/ubicacion.html" class="link">Ubicación</a>
-                </li>
-                <li class="li_links">
-                    <a href="../pages/ofertas.html" class="link">Oferta</a>
-                </li>
-                <l1 class="li_links">
-                    <a href="../pages/catalogo.html" class="link">Catalogo</a>
-                </l1>
-                <l1 class="li_links">
-                    <a href="../pages/contacto.html" class="link">Contactanos</a>
-                </l1>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Smart City</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/catalogo.html">Catalogo</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -58,53 +54,60 @@
                 Nuestras sucursales
             </h2>
             <p class="sucursales-p">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate tempore enim cumque molestiae maiores doloribus magnam nulla amet, reiciendis eius!
+                Puedes encontrar nuestras distintas sucursales ubicadas por toda la provincia aqui!
             </p>
         </section>
-        <section class="sucursales-ubi">
-            <h4 class="sucurnum">
-                Sucursal 1
-            </h4>
-            <div class="grid-item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38515.76358562118!2d-64.18816862435321!3d-31.432176007250746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987868a94039%3A0xbce488adf17a3cd5!2sFravega!5e0!3m2!1ses-419!2sar!4v1711986314004!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="ubi-container">
+
+            <div class="sucur-ubi">
+                <h4 class="sucursal-tittle">Sucursal 1</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38515.76358562118!2d-64.18816862435321!3d-31.432176007250746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987868a94039%3A0xbce488adf17a3cd5!2sFravega!5e0!3m2!1ses-419!2sar!4v1711986314004!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
-        <section class="sucursales-ubi">
-            <h4 class="sucurnum">
-                Sucursal 2
-            </h4>
-            <div class="grid-item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38533.543366554324!2d-64.27228699048521!3d-31.388873352270025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298c955bc018d%3A0x5f2387b96b89c457!2sFr%C3%A1vega%20C%C3%B3rdoba%20Norte!5e0!3m2!1ses-419!2sar!4v1711986377759!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="sucur-ubi">
+                <h4 class="sucursal-tittle">Sucursal 2</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38533.543366554324!2d-64.27228699048521!3d-31.388873352270025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298c955bc018d%3A0x5f2387b96b89c457!2sFr%C3%A1vega%20C%C3%B3rdoba%20Norte!5e0!3m2!1ses-419!2sar!4v1711986377759!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
-        <section class="sucursales-ubi">
-            <h4 class="sucurnum">
-                Sucursal 3
-            </h4>
-            <div class="grid-item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d436074.3188719208!2d-64.59142410237233!3d-31.36365308733251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6641452de511%3A0x576cf25070108170!2zRnLDoXZlZ2E!5e0!3m2!1ses-419!2sar!4v1711986401087!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="sucur-ubi">
+                <h4 class="sucursal-tittle">Sucursal 3</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d436074.3188719208!2d-64.59142410237233!3d-31.36365308733251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6641452de511%3A0x576cf25070108170!2zRnLDoXZlZ2E!5e0!3m2!1ses-419!2sar!4v1711986401087!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
-        <section class="sucursales-ubi">
-            <h4 class="sucurnum">
-                Sucursal 4
-            </h4>
-            <div class="grid-item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16198.82805891224!2d-64.20477365771488!3d-31.403541555760572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987868a94039%3A0xf8efc6c658877287!2zRnLDoXZlZ2E!5e0!3m2!1ses-419!2sar!4v1711986481557!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="sucur-ubi">
+                <h4 class="sucursal-tittle">Sucursal 4</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16198.82805891224!2d-64.20477365771488!3d-31.403541555760572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987868a94039%3A0xf8efc6c658877287!2zRnLDoXZlZ2E!5e0!3m2!1ses-419!2sar!4v1711986481557!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
+        <section class="relleno">
+            <h5>No consigues ubicarte?</h5>
+            <p>Pruba comunicandote al (01011) 1122334455</p>
         </section>
     </main>
+
     <footer>
         <section class="p-container">
             <p>Todos los derechos reservados</p>
         </section>
-        
+
         <div class="redes">
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/home.php"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

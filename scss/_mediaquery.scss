@@ -83,5 +83,13 @@
         display: flex;
         text-align: center;
     }
-
+}
+@media only screen and (min-width: 767px){
+    .ubi-container{
+    display: grid;
+    grid-template-columns: auto;
+    }
+    .relleno{
+        margin-bottom: 18vh;
+    }
 }
