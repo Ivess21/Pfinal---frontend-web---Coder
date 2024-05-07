@@ -162,6 +162,12 @@ body {
     margin-bottom: 18vh;
   }
 }
+@media only screen and (min-width: 970px) {
+  .img-catalogo {
+    width: 50px;
+    height: 50px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -314,4 +320,35 @@ footer {
 .h2yp {
   align-items: center;
   color: white;
+}
+
+.img-catalogo {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+}
+
+.titulo-cata {
+  text-align: center;
+  color: white;
+}
+
+.compos {
+  color: white;
+}
+
+.article-container {
+  background-color: red;
+  text-align: center;
+  justify-content: center;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 100px;
+}
+
+.licontainer {
+  color: wheat;
 }/*# sourceMappingURL=style.css.map */
